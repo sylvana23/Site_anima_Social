@@ -1,0 +1,71 @@
+/* Importação de fonte (se necessário, adicione um @import aqui caso use Google Fonts) */
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centraliza o conteúdo */
+    transition: background 0.3s ease-in-out; /* Suaviza a transição de cor do fundo */
+}
+
+section {
+    height: 400px; /* Define uma altura padrão para as seções */
+    padding: 50px 20px; /* Adiciona espaçamento interno */
+}
+
+.home {
+    background: url('../img/gradiente.png') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+}
+
+header img {
+    width: 50px; /* Ajusta o tamanho do logo no cabeçalho */
+    margin: -23px 50px;
+    display: block;
+}
+
+ h1 {
+    font-size: 85px;
+    font-family: 'Roca One';
+    color: #156669;
+    overflow: hidden;  
+ 
+    white-space: nowrap;  
+    margin: 0 auto;  
+    animation: typing 5s steps(30, end), blink 0.60s step-end infinite; 
+}
+
+
+
+.container_home {
+    margin: 90px auto; /* Centraliza o container */
+}
+
+.container_home img {
+    display: flex;
+    width: 300px;
+    margin: -250px 980px; /* Posiciona a imagem */
+}
+
+button {
+    background-color: #FFFFFF;
+    color: #2E7D32;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #C8E6C9; /* Altera a cor ao passar o mouse */
+}
+
+img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o container */
+    height: auto;
+}
+
+
+

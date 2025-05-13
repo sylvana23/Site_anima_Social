@@ -1,0 +1,61 @@
+@media (max-width: 955px) {
+    .section_init h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      .section_init p{
+        width: 580px;
+        display: flex;
+        font-size: 20px;
+      }
+    
+      .section_init button {
+        padding: 20px 25px;
+        font-size: 20px;
+        background: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 16px;
+        border-radius: 35px;
+      }
+
+}
+
+@media (max-width: 625px) {
+
+    .section_init {
+        height: 60vh;
+        background: #f7f7f7;
+        color: #333;
+        padding: 20px 15px;
+      }
+      .container_init{
+        display: block;
+        margin-top: 20px;
+      }
+    
+      .section_init h1{
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+      .section_init p{
+        width: 40x;
+        display: flex;
+        font-size: 25px;
+      }
+    
+      .section_init button {
+        padding: 25px 29px;
+        font-size: 20px;
+        background: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin-top: 16px;
+        border-radius: 35px;
+      }
+
+
+
+  }

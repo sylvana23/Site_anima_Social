@@ -1,0 +1,238 @@
+@media (max-width: 548px) { 
+    header .container {
+      flex-direction: column;
+    }    
+    header nav{
+      margin-top: 10px;
+    }
+    header nav a {
+      color: #343434;
+      margin-left: 5px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+   
+    .inicial_container{
+      margin: 20px auto;
+      width: 310px;
+      height: auto;
+    }
+    .hero{
+      height: 90vh;
+    }
+    .hero img{
+     width: 270px;
+     border-radius: 50px;
+     display: flex;
+     justify-content: center;  
+     align-items: center;
+     margin: 20px auto;
+     
+  
+    }
+    .hero h2 {
+      color: #ffff;
+      text-align: center;
+      font-size:30px;
+      letter-spacing: 2px;
+      font-family: "Alfa Slab One", serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }  
+    .hero p {
+      margin: o auto;
+      width: 290px;
+      font-size: 16px;
+      text-align: center; 
+      margin-bottom: 30px;
+  
+    }
+    .hero a {
+      background-color: #16a34a;
+      color: white;
+      padding: 10px;
+      border-radius: 15px;
+      font-size:15px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+
+    .sobre{
+      background-color: #758E4F;
+      height: 100vh;
+    }
+    .container-sobre{
+      margin-top: -40px;
+  
+    }
+    .card {
+      background-color: white;
+      padding: 10px;
+      border-radius:20px;
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.30);
+    }
+    .cards{
+      margin-top: -40px;
+      width:300px;
+      padding: 20px;
+    }
+
+
+
+    .canal{
+      background-image: url('../background_cel_cana.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      margin: 0 auto;
+    }
+    .inicial_canal{
+      margin: 140px auto;
+
+      width: 330px;
+  
+    }
+    .canal img{
+      width: 230px;
+      border-radius: 200px;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      margin: -40px auto;
+   }
+   .canal h3 {
+     color: #ffff;
+     font-size:26px;
+     letter-spacing: 2px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     text-align: center;
+     margin: 0 auto;
+   }
+   .canal a{
+     color: #6F9C54;
+     text-decoration: none;
+   }
+
+
+
+
+
+   .carrossel-container {
+    background-image: url('../background_cel_podcast.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
+ 
+  .logo_animacast{
+    width: 300px;
+    margin: 20px 26px;
+    display: flex;
+  }
+  .text_podcast{
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: #FFE0AE;
+    border-radius: 20px;
+    margin: 80px -10px;
+  }
+  .text_podcast h3{
+    font-size: 205x;
+    text-align: center;
+    margin: 15px auto;
+  
+  }
+  .text_podcast span{
+    color: #6F9C54;
+  }
+  .estudante_podcast{
+    width: 350px;
+    margin: 0 -25px;
+    display: flex;
+  }
+  .second_podcast{
+    margin-left: -5px ;
+  }
+  .third_podcast{
+    margin-left: -45px ;
+  }
+  .text_preview{
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: #FFE0AE;
+    border-radius: 20px;
+    margin: 80px -40px;
+  }
+  .text_preview h3{
+    font-size: 205x;
+    text-align: center;
+    margin: 15px auto;
+  }
+  .text_preview span{
+    color: #6F9C54;
+  }
+  .video-container {
+    margin-left: -50px;
+    display: flex;
+    padding: 40px;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 355px;
+    height: 100%;
+  }
+
+
+
+
+
+   .app{
+      background-color: #cff498;
+      height: 90vh;
+    }
+
+    .text-app {
+      text-align: center;
+      width: 350px;
+      margin: 0 auto;
+    }
+    .text-app h3{
+      color: #ffff;
+      font-size:35px;
+      display: flex;
+      text-align: center;
+      align-self: center;
+      letter-spacing: 4px;
+      font-family: "Alfa Slab One", serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .cards-tela {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  
+    }
+    .card_mokup {
+      margin: 10px auto;
+      border-radius:50px;
+    }
+    .card_mokup img{
+      width: 100px;
+      display: flex;
+      margin: 0 auto;
+    }
+  
+
+  
+  }

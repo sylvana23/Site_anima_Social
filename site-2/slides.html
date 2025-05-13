@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel Simples Corrigido</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    .carrossel-container {
+    background-image: url('../background_podcast.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 90vh;
+     margin: 0 auto;
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+    }
+
+    .carrossel {
+      display: flex;
+      transition: transform 0.4s ease;
+    }
+
+    .slide {
+      width: 100vw; /* ocupa 100% da largura da tela */
+      flex-shrink: 0; /* impede encolhimento */
+      padding: 20px;
+      text-align: center;
+  
+    }
+
+    .slide img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .seta {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: black;
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 5px 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .seta.esquerda {
+      left: 10px;
+    }
+
+    .seta.direita {
+      right: 10px;
+    }
+
+    .seta.invisivel {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="carrossel-container" id="carrosselContainer">
+    <div class="carrossel" id="carrossel">
+      
+      <section class="slide">
+        <div class="inicial_podcast"  data-aos-delay="200">
+          <img src="../lodo_animacast.png" class="logo_animacast">
+          <h3 data-aos="fade-up">Inscreva-se no nosso canal no <span>YouTube</span></h3> 
+          <h3>Não perca nada!</h3>
+           <div class="video-container">
+             <iframe src="https://www.youtube.com/embed/PrxFoGdnRiQ" 
+                     frameborder="0" 
+                     allowfullscreen>
+             </iframe>
+           </div>
+       </div>
+       <img src="../estudante_podcast.png" alt="" data-aos="fade-up" data-aos-delay="300">
+      </section>
+
+      <section class="slide">
+        <h2>Slide 2</h2>
+        <img src="https://via.placeholder.com/300x200?text=Imagem+2" alt="Imagem 2">
+      </section>
+
+      <section class="slide">
+        <h2>Slide 3</h2>
+        <img src="https://via.placeholder.com/300x200?text=Imagem+3" alt="Imagem 3">
+      </section>
+
+    </div>
+
+    <button class="seta esquerda" id="voltar">&#8592;</button>
+    <button class="seta direita" id="avancar">&#8594;</button>
+  </section>
+
+  <script>
+    const carrossel = document.getElementById('carrossel');
+    const voltar = document.getElementById('voltar');
+    const avancar = document.getElementById('avancar');
+    const totalSlides = carrossel.children.length;
+    let indice = 0;
+
+    function atualizar() {
+      const larguraSlide = window.innerWidth;
+      carrossel.style.transform = `translateX(-${indice * larguraSlide}px)`;
+      voltar.style.display = indice === 0 ? 'none' : 'block';
+      avancar.style.display = indice === totalSlides - 1 ? 'none' : 'block';
+    }
+
+    voltar.addEventListener('click', () => {
+      if (indice > 0) {
+        indice--;
+        atualizar();
+      }
+    });
+
+    avancar.addEventListener('click', () => {
+      if (indice < totalSlides - 1) {
+        indice++;
+        atualizar();
+      }
+    });
+
+    // Swipe para celular
+    let startX = 0;
+    const container = document.getElementById('carrosselContainer');
+
+    container.addEventListener('touchstart', e => {
+      startX = e.touches[0].clientX;
+    });
+
+    container.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+
+      if (diff > 50 && indice < totalSlides - 1) {
+        indice++;
+      } else if (diff < -50 && indice > 0) {
+        indice--;
+      }
+      atualizar();
+    });
+
+    window.addEventListener('resize', atualizar); // reajusta se mudar o tamanho da tela
+
+    atualizar(); // inicializa
+  </script>
+
+</body>
+</html>

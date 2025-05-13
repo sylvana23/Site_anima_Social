@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  
+  }
+  
+
+  .header {
+    background: #ccc;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+  .section_init {
+    height: 80vh;
+    background: #6ddccf;
+    color: #333;
+    
+    padding: 48px 32px;
+  }
+  .container_init{
+    display: block;
+    margin-top: 90px;
+  }
+
+  .section_init h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+  .section_init p{
+    font-size: 20px;
+  }
+
+  .section_init button {
+    padding: 20px 25px;
+    font-size: 20px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    border-radius: 35px;
+  }
+  .section_init button:hover{
+    border: solid 2px black;
+  }
+
+  .topics {
+    padding: 32px;
+    background: #f7f7f7;
+    text-align: center;
+  }
+  
+  .topic-cards {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .testimonials {
+    background: #ffd700;
+    padding: 32px;
+    text-align: center;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 16px;
+  }
+  
+  .testimonial {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .download-app {
+    padding: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .download-app img {
+    max-width: 200px;
+  }
+  
+  .download-app button {
+    padding: 8px 16px;
+    background: #6ddccf;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+  }
+
+  
