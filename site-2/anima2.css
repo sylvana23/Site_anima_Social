@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: 'League Spartan', sans-serif;
+
   }
 
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
-
+    font-family: 'League Spartan', sans-serif;
   }
+
 /*MENU*/
   header {
     background: #fff;
@@ -67,8 +69,7 @@ html {
     color: #ffff;
     font-size:50px;
     letter-spacing: 4px;
-    font-family: "Alfa Slab One", serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
     margin-bottom: -50px;
   }
   .hero p {
@@ -120,7 +121,6 @@ html {
     font-size:50px;
     letter-spacing: 4px;
     font-family: "Alfa Slab One", serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   .card h4 {
     font-size: 25px;
@@ -156,7 +156,6 @@ html {
     color: #ffff;
     font-size:40px;
     letter-spacing: 4px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
     margin: 0 auto;
   }
@@ -209,25 +208,25 @@ html {
   }
 
 
-
   .logo_animacast{
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     display: flex;
   
   }
   .text_podcast{
-    width: 300px;
+    width: 500px;
     height: 100px;
     padding: 20px;
     background-color: #FFE0AE;
     border-radius: 20px;
-    margin: 80px -10px;
+    margin: 30px auto;
   }
   .text_podcast h3{
-    font-size: 205x;
+    font-size: 23px;
     text-align: center;
-    margin: 15px auto;
+    top: 30px;
+ 
    
   }
   .text_podcast span{
@@ -269,7 +268,7 @@ html {
 
 /*APP*/
   .app{
-    background-color: #cff498;
+   background-color: #33673B;
     height: 100vh;
   }
   .text-app {
@@ -279,8 +278,7 @@ html {
     color: #ffff;
     font-size:50px;
     letter-spacing: 4px;
-    font-family: "Alfa Slab One", serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
 
   }
   .cards-tela {
